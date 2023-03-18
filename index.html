@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+</head>
+    <style>
+        .container{
+            display: flex;
+        }
+        .filter{
+            margin-left: 10px;
+            margin-top: 100px;
+        }
+        .filter ul{
+            list-style: none;
+            padding: 0;
+        }
+        .filter ul li{
+            padding: 8px 0;
+        }
+        .products{
+            margin-top: 40px;
+            margin-left: 50px;
+            max-width: 1200px;
+            overflow: hidden;
+        }
+        #product-list{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            width: auto;
+            justify-content: space-between;
+        }
+        #product-list li{
+            /* width: 33%;
+            flex-grow: 1; */
+            padding: 20px;
+            border: solid 1px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .short{
+            float: right;
+            /* margin-left: 200px; */
+        }
+        img{
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="filter">
+            <h3>Brands</h3>
+            <ul>
+                <li><input type="checkbox" name="brand" value="adidas" onclick="filter()">Adidas</li>
+                <li><input type="checkbox" name="brand" value="nike" onclick="filter()">Nike</li>
+                <li><input type="checkbox" name="brand" value="puma" onclick="filter()">Puma</li>
+            </ul>
+        </div>
+        <div class="products">
+            <select name="short" id="short" onchange="shortProducts()">
+                <option value="" disabled selected>Select</option>
+                <option value="by-name">By Name</option>
+                <option value="low-high">Price:Low-High</option>
+                <option value="high-low">Price:High-Low</option>
+            </select>
+            <ul id="product-list">
+                
+            </ul>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
