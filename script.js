@@ -11,6 +11,8 @@ const products = [{ name: 'Adida-1', brand: 'adidas', img: 'https://m.media-amaz
 console.log(products)
 let tmp_p = products;
 let productlist = document.getElementById('product-list');
+
+
 function render(list) {
     productlist.innerHTML = '';
     list.map((val) => {
