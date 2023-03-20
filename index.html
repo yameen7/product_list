@@ -6,96 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .wrapper {
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
 
-    }
-
-    li {
-        list-style: none;
-    }
-
-    .card {
-        width: 30%;
-        margin-left: 35px;
-        border: 5px solid green;
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .filter {
-        width: 10%;
-    }
-
-    .container {
-        display: flex;
-    }
-
-    .titles {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #short {
-        margin-top: 35px;
-        margin-left: 40px;
-    }
-
-    h3 {
-        margin-left: 40px;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 70px;
-    }
-
-    .card img {
-        padding-top: 10px;
-    }
-    #pop-up{
-        position: absolute;
-        top: 20%;
-        left: 40%;
-        height: 450px;
-        width: 400px;
-        background:linear-gradient(#090979,#00d4ff);
-    }
-    #pop-up img{
-        padding: 50px;
-    }
-    #pop-up button{
-        margin-left: 130px;
-        padding: 10px;
-        width: 150px;
-        background-color: red;
-        border: none;
-        font-weight: bold;
-    }
-    .pop-show{
-        display: block;
-    }
-    .pop-hide{
-        display: none;
-    }
 </style>
 
 <body>
     <div id="pop-up" class="pop-hide">
-        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg">
+        <img
+            src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg">
         <button onclick="setcokie()">Close</button>
     </div>
     <h1>SHOES</h1>
     <div class="container">
         <div class="filter">
             <select name="short" id="short" onchange="shortProducts()">
-                <!-- <option value="" disabled selected>Select</option> -->
                 <option value="A-Z">A-Z</option>
                 <option value="Z-A">Z-A</option>
                 <option value="low-high">Price:Low-High</option>
@@ -110,26 +36,10 @@
         </div>
 
         <div class="wrapper" id="product-list">
-            <div class="card">
-                <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-                <h4>Name</h4>
-                <h4>Name</h4>
-                <h4>Name</h4>
-            </div>
-            <div class="card">
-                <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-                <h4>Name</h4>
-                <h4>Name</h4>
-                <h4>Name</h4>
-            </div>
-            <div class="card">
-                <img src="http://bit.ly/2tMBBTd" height="420" width="327">
-                <h4>Name</h4>
-                <h4>Name</h4>
-                <h4>Name</h4>
-            </div>
         </div>
+    </div>
 
 </body>
 <script src="script.js"></script>
+
 </html>
